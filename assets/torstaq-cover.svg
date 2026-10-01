@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640">
+<defs><radialGradient id="bg"><stop stop-color="#17100a"/><stop offset=".65" stop-color="#050505"/><stop offset="1" stop-color="#000"/></radialGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff1c2"/><stop offset=".45" stop-color="#f0b34d"/><stop offset="1" stop-color="#8d4d0c"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1280" height="640" fill="url(#bg)"/>
+<path d="M430 0 A610 610 0 0 1 1280 530" fill="none" stroke="url(#gold)" stroke-width="3" opacity=".8" filter="url(#glow)"/>
+<path d="M150 270h230l-50 72H100z" fill="url(#gold)"/>
+<path d="M174 350h92l34 34-128 108z" fill="url(#gold)"/>
+<path d="M266 350h34l34 34-128 108v-92z" fill="#9b5c17"/>
+<text x="410" y="350" fill="url(#gold)" font-family="Arial,Helvetica,sans-serif" font-size="105" font-weight="700" letter-spacing="-5">TorStaq</text>
+<text x="437" y="418" fill="#e6c17b" font-family="Arial,Helvetica,sans-serif" font-size="22" letter-spacing="10">BUILD / LAUNCH / SCALE</text>
+</svg>
