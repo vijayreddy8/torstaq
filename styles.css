@@ -11,7 +11,7 @@ h3{font-size:1.25rem;margin-bottom:8px}
 .grad{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
 nav{position:sticky;top:0;z-index:10;background:rgba(7,9,13,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
-.logo{font:700 1.25rem 'Space Grotesk',sans-serif}.logo b{color:var(--ac)}
+.logo{display:flex;align-items:center;height:50px}.logo img{display:block;width:106px;height:48px;object-fit:contain;border-radius:6px}.logo:focus-visible{outline:2px solid var(--ac);outline-offset:4px;border-radius:6px}
 .links{display:flex;gap:26px;align-items:center;font-size:.92rem;color:var(--mut)}
 .links a:hover{color:var(--tx)}
 .btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;font-size:.95rem;border:1px solid var(--line);transition:.2s;cursor:pointer;background:none;color:var(--tx);font-family:inherit}
