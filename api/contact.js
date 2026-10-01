@@ -49,7 +49,14 @@ module.exports = async (req, res) => {
         text: `Name: ${name}\nEmail: ${email}\nPackage: ${pkg}\nBudget: ${budget}\n\n${message}`,
       }),
     });
-    if (!r.ok) return res.status(502).json({ error: 'Could not send message.' });
+    if (!r.ok) {
+      let detail = 'Resend rejected the email request.';
+      try {
+        const body = await r.json();
+        detail = body?.message || body?.name || detail;
+      } catch {}
+      return res.status(502).json({ error: detail });
+    }
     return res.status(200).json({ ok: true });
   } catch {
     return res.status(502).json({ error: 'Could not send message.' });
