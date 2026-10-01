@@ -25,7 +25,7 @@ section{padding:84px 0}
 .hero{padding:150px 0 70px;background:radial-gradient(800px 380px at 70% -10%,rgba(34,211,238,.13),transparent),radial-gradient(600px 320px at 10% 0,rgba(74,222,128,.10),transparent)}
 .hero-layout{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:52px;align-items:center;min-height:430px}
 .hero-logo{display:flex;align-items:center;justify-content:flex-start;padding-top:42px}
-.hero-logo img{display:block;width:min(100%,330px);height:auto;object-fit:contain}
+.hero-logo img{display:block;width:min(100%,330px);height:auto;object-fit:contain;mix-blend-mode:screen}
 .hero-copy{padding-top:34px}
 .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);padding:6px 14px;border-radius:99px;font-size:.8rem;color:var(--mut);margin-bottom:24px}
 .badge i{width:8px;height:8px;border-radius:50%;background:var(--ac);box-shadow:0 0 10px var(--ac)}
