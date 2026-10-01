@@ -9,11 +9,13 @@ h1{font-size:clamp(2.4rem,6.5vw,4.6rem)}
 h2{font-size:clamp(1.8rem,4vw,2.7rem);margin-bottom:12px}
 h3{font-size:1.25rem;margin-bottom:8px}
 .grad{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
-nav{position:sticky;top:0;z-index:10;background:rgba(7,9,13,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
-.logo{font:700 1.25rem 'Space Grotesk',sans-serif}.logo b{color:var(--ac)}
-.links{display:flex;gap:26px;align-items:center;font-size:.92rem;color:var(--mut)}
-.links a:hover{color:var(--tx)}
+nav{position:absolute;top:24px;left:0;width:100%;z-index:10;background:transparent;border:0}
+nav .wrap{display:flex;justify-content:flex-end;height:auto}
+nav .links{display:flex;gap:8px;align-items:center;font-size:.92rem;color:var(--mut);padding:10px 12px;background:rgba(10,18,24,.58);border:1px solid rgba(34,211,238,.28);border-radius:999px;backdrop-filter:blur(18px);box-shadow:0 0 28px rgba(34,211,238,.10)}
+.logo{display:none}
+.links a{padding:8px 14px;border-radius:999px}
+.links a:hover{color:var(--tx);background:rgba(255,255,255,.06)}
+.links .btn{padding:9px 18px!important}
 .btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;font-size:.95rem;border:1px solid var(--line);transition:.2s;cursor:pointer;background:none;color:var(--tx);font-family:inherit}
 .btn.p{background:linear-gradient(90deg,var(--ac),var(--ac2));color:#04110a;border:0}
 .btn:hover{transform:translateY(-2px);border-color:var(--ac)}
@@ -86,8 +88,8 @@ textarea{min-height:120px;resize:vertical}
 footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-size:.88rem}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .wa{position:fixed;right:18px;bottom:18px;z-index:20;background:#25d366;color:#04110a;font-weight:700;padding:13px 18px;border-radius:99px;box-shadow:0 8px 24px rgba(0,0,0,.4);font-size:.9rem}
-@media(max-width:900px){.g4,.g3{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.links a:not(.btn){display:none}.g4,.g3,.g2,.row{grid-template-columns:1fr}section{padding:60px 0}.hero{padding:60px 0 50px}}
+@media(max-width:900px){.g4,.g3{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.hero-layout{grid-template-columns:1fr;gap:24px}.hero-logo{justify-content:flex-start}.hero-logo img{width:300px}.hero-copy{padding-left:0}}
+@media(max-width:640px){nav{top:14px}nav .wrap{padding:0 14px}nav .links{width:100%;justify-content:center;gap:2px;padding:8px}.links a{padding:7px 8px;font-size:.78rem}.links .btn{padding:8px 11px!important}.g4,.g3,.g2,.row{grid-template-columns:1fr}section{padding:60px 0}.hero{padding:120px 0 50px}.hero-layout{gap:14px}.hero-logo img{width:245px}.hero-copy h1{font-size:clamp(2.4rem,12vw,4rem)}.stats{margin-top:40px;padding:18px;border-radius:22px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 .ticker{border-block:1px solid var(--line);background:var(--bg2);padding:14px 0;overflow:hidden;white-space:nowrap}
 .ticker .wrap{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;font:500 .78rem Inter;letter-spacing:.16em;color:var(--mut)}
