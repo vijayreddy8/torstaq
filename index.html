@@ -21,7 +21,7 @@
 
 <header class="hero"><div class="wrap">
 <div class="hero-layout">
-<div class="hero-logo"><img src="/torstaq-logo.jpg" alt="TorStaq"></div>
+<div class="hero-logo"><img src="/public/torstaq-logo.jpg" alt="TorStaq"></div>
 <div class="hero-copy">
 <span class="badge"><i></i> DIGITAL TECHNOLOGY STUDIO · AVAILABLE FOR PROJECTS</span>
 <h1>Digital products.<br><span class="grad">Built to move.</span></h1>
@@ -128,7 +128,7 @@ var $=function(i){return document.getElementById(i)},st=$('st');
 function msg(t,c){st.textContent=t;st.className=c||''}
 function data(){return{name:$('nm').value.trim(),email:$('em').value.trim(),package:$('pk').value,budget:$('bd').value,message:$('ms').value.trim(),website:$('hp').value}}
 function valid(d){if(d.name.length<2){msg('Please enter your name.','er');return false}
-if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email)){msg('Please enter a valid email.','er');return false}
+if(!/^\S+@\S+\.\S+$/.test(d.email)){msg('Please enter a valid email.','er');return false}
 if(d.message.length<10){msg('Please add a few more details (10+ characters).','er');return false}return true}
 function txt(d){return'Name: '+d.name+'\nEmail: '+d.email+'\nPackage: '+d.package+'\nBudget: '+d.budget+'\n\n'+d.message}
 $('f').addEventListener('submit',function(e){e.preventDefault();var d=data();if(!valid(d))return;
